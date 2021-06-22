@@ -31,33 +31,16 @@ class TelasViewController: UIViewController {
         botaoNaoFase.layer.masksToBounds = true
         //SIM = 0 NÃ0 = 1
         
-        let fase1 = Fase(imagem: "fase1imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on  the concept of Contrast. This is")
+        let gabarito:[Int]    = [1         , 0         , 0           , 1          , 0           , 1         , 1         , 1          ]
+        let tipoFase:[String] = ["Contrast", "Aligment", "Repetition", "Proximity", "Repetition", "Contrast", "Aligment", "Proximity"]
         
-        let fase2 = Fase(imagem: "fase2imagem", botaoCorreto: 0, pontuacao: 100, textoPergunta: "Based on the concept of Alignment. This is")
-        
-        let fase3 = Fase(imagem: "fase3imagem", botaoCorreto: 0, pontuacao: 100, textoPergunta: "Based on the concept of Repetition. This is")
-        
-        let fase4 = Fase(imagem: "fase4imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Proximity. This is")
+        for i in 0..<gabarito.count {
+            self.fasesDoJogo.append(Fase(imagem: i+1, botaoCorreto: gabarito[i], textoPergunta: tipoFase[i]))
+        }
         
         
-        let fase5 = Fase(imagem: "fase5imagem", botaoCorreto: 0, pontuacao: 100, textoPergunta: "Based on the concept of Repetition. This is")
-        
-        let fase6 = Fase(imagem: "fase6imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Contrast. This is")
-        
-        let fase7 = Fase(imagem: "fase7imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Alignment. This is")
-        
-        let fase8 = Fase(imagem: "fase8imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Proximity. This is")
-        
-        //SIM = 0 NÃ0 = 1
         numeroDeFases = 0
-        fasesDoJogo.append(fase1)
-        fasesDoJogo.append(fase2)
-        fasesDoJogo.append(fase3)
-        fasesDoJogo.append(fase4)
-        fasesDoJogo.append(fase5)
-        fasesDoJogo.append(fase6)
-        fasesDoJogo.append(fase7)
-        fasesDoJogo.append(fase8)
+
         //organizacaoFases()
         let image = fasesDoJogo[numeroDeFases].imagem
         let frase = fasesDoJogo[numeroDeFases].textoPergunta

@@ -14,11 +14,12 @@ class Fase{
     var botaoCorreto: Int
     var pontuacao: Int
     var textoPergunta: String
-    init(imagem: String, botaoCorreto: Int, pontuacao: Int, textoPergunta: String) {
-        self.imagem = imagem
+    
+    init(imagem: Int, botaoCorreto: Int, textoPergunta: String) {
         self.botaoCorreto = botaoCorreto
-        self.pontuacao = pontuacao
-        self.textoPergunta = textoPergunta
+        self.pontuacao = 100
+        self.textoPergunta = "Based on the concept of \(textoPergunta). This is"
+        self.imagem = "fase\(imagem)imagem"
     }
 }
 // 0 é não e 1 é sim pro botao
