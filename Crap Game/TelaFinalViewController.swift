@@ -17,26 +17,12 @@ class TelaFinalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scoreLabel.text = "Score: \(score)"
+        self.scoreLabel.text = "Score: \(score)"
         
-        scoreLabel.layer.cornerRadius = 10
-        scoreLabel.layer.masksToBounds = true
+        self.scoreLabel.layer.cornerRadius = 10
+        self.scoreLabel.layer.masksToBounds = true
         
-        menuFinalBotao.layer.cornerRadius = 20
-        menuFinalBotao.layer.masksToBounds = true
-
-        // Do any additional setup after loading the view.
+        self.menuFinalBotao.layer.cornerRadius = 20
+        self.menuFinalBotao.layer.masksToBounds = true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
