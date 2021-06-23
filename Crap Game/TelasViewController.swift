@@ -13,87 +13,60 @@ class TelasViewController: UIViewController {
     var numeroDeFases = 0
     var score: Int = 0
     
-    
     @IBOutlet weak var telasJogo: UIImageView!
     @IBOutlet weak var botaoSimFase: UIButton!
     @IBOutlet weak var botaoNaoFase: UIButton!
     @IBOutlet weak var progressoDoJogo: UILabel!
     @IBOutlet weak var perguntasTextos: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        botaoSimFase.layer.cornerRadius = 20
-        botaoSimFase.layer.masksToBounds = true
+        self.botaoSimFase.layer.cornerRadius = 20
+        self.botaoSimFase.layer.masksToBounds = true
         
-        botaoNaoFase.layer.cornerRadius = 20
-        botaoNaoFase.layer.masksToBounds = true
+        self.botaoNaoFase.layer.cornerRadius = 20
+        self.botaoNaoFase.layer.masksToBounds = true
         //SIM = 0 NÃ0 = 1
         
-        let fase1 = Fase(imagem: "fase1imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on  the concept of Contrast. This is")
+        let gabarito:[Int]    = [1         , 0         , 0           , 1          , 0           , 1         , 1         , 1          ]
+        let tipoFase:[String] = ["Contrast", "Aligment", "Repetition", "Proximity", "Repetition", "Contrast", "Aligment", "Proximity"]
         
-        let fase2 = Fase(imagem: "fase2imagem", botaoCorreto: 0, pontuacao: 100, textoPergunta: "Based on the concept of Alignment. This is")
+        for i in 0..<gabarito.count {
+            self.fasesDoJogo.append(Fase(imagem: i+1, botaoCorreto: gabarito[i], textoPergunta: tipoFase[i]))
+        }
         
-        let fase3 = Fase(imagem: "fase3imagem", botaoCorreto: 0, pontuacao: 100, textoPergunta: "Based on the concept of Repetition. This is")
-        
-        let fase4 = Fase(imagem: "fase4imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Proximity. This is")
-        
-        
-        let fase5 = Fase(imagem: "fase5imagem", botaoCorreto: 0, pontuacao: 100, textoPergunta: "Based on the concept of Repetition. This is")
-        
-        let fase6 = Fase(imagem: "fase6imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Contrast. This is")
-        
-        let fase7 = Fase(imagem: "fase7imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Alignment. This is")
-        
-        let fase8 = Fase(imagem: "fase8imagem", botaoCorreto: 1, pontuacao: 100, textoPergunta: "Based on the concept of Proximity. This is")
-        
-        //SIM = 0 NÃ0 = 1
-        numeroDeFases = 0
-        fasesDoJogo.append(fase1)
-        fasesDoJogo.append(fase2)
-        fasesDoJogo.append(fase3)
-        fasesDoJogo.append(fase4)
-        fasesDoJogo.append(fase5)
-        fasesDoJogo.append(fase6)
-        fasesDoJogo.append(fase7)
-        fasesDoJogo.append(fase8)
-        //organizacaoFases()
         let image = fasesDoJogo[numeroDeFases].imagem
         let frase = fasesDoJogo[numeroDeFases].textoPergunta
         telasJogo.image = UIImage(named: image)
-        progressoDoJogo.text = "\(numeroDeFases + 1)/8"
-        perguntasTextos.text = frase
-        
-        
-        // Do any additional setup after loading the view.
+        self.progressoDoJogo.text = "\(numeroDeFases + 1)/8"
+        self.progressoDoJogo.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        self.perguntasTextos.text = frase
     }
     
     
     @IBAction func botaoSimAtualizar(_ sender: UIButton) {
-        contaScore(tag: 0)
-        organizacaoFases()
-        
+        self.contaScore(tag: 0)
+        self.organizacaoFases()
     }
     
     @IBAction func botaoNaoAtualizar(_ sender: UIButton) {
-        contaScore(tag: 1)
-        organizacaoFases()
+        self.contaScore(tag: 1)
+        self.organizacaoFases()
     }
     
     
     func organizacaoFases(){
-        if numeroDeFases < fasesDoJogo.count-1{
-            numeroDeFases += 1
+        if (self.numeroDeFases < fasesDoJogo.count-1){
+            self.numeroDeFases += 1
 
-            let image = fasesDoJogo[numeroDeFases].imagem
-            let frase = fasesDoJogo[numeroDeFases].textoPergunta
-            telasJogo.image = UIImage(named: image)
+            let image = self.fasesDoJogo[self.numeroDeFases].imagem
+            self.telasJogo.image = UIImage(named: image)
             
-            progressoDoJogo.text = "\(numeroDeFases+1)/8"
-            perguntasTextos.text = frase
-        }
-        else{
+            self.progressoDoJogo.text = "\(self.numeroDeFases+1)/8"
+            self.perguntasTextos.text = self.fasesDoJogo[self.numeroDeFases].textoPergunta
+        }else{
+            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "TelaFinalViewController") as! TelaFinalViewController
             viewController.score = score
@@ -101,28 +74,10 @@ class TelasViewController: UIViewController {
             self.present(viewController, animated: false, completion: nil)}
     }
     func contaScore(tag: Int){
-        if numeroDeFases <= fasesDoJogo.count-1{
-            if tag == fasesDoJogo[numeroDeFases].botaoCorreto{
-                score += fasesDoJogo[numeroDeFases].pontuacao
-                //progressoDoJogo.text = "\(numeroDeFases + 1)/4"
+        if self.numeroDeFases <= self.fasesDoJogo.count-1{
+            if tag == self.fasesDoJogo[self.numeroDeFases].botaoCorreto{
+                self.score += self.fasesDoJogo[self.numeroDeFases].pontuacao
             }
         }
-        //else{
-        //score += fasesDoJogo[numeroDeFases].pontuacao
-        //}
-        print(score)
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    
 }
