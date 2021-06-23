@@ -11,29 +11,13 @@ class JogarTeoriaViewController: UIViewController {
     @IBOutlet weak var botaoJogar: UIButton!
     @IBOutlet weak var botaoTutorial: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.botaoJogar.layer.cornerRadius = 20
+        self.botaoJogar.layer.masksToBounds = true
         
-        botaoJogar.layer.cornerRadius = 20
-        botaoJogar.layer.masksToBounds = true
-        
-        botaoTutorial.layer.cornerRadius = 20
-        botaoTutorial.layer.masksToBounds = true
-
-        // Do any additional setup after loading the view.
+        self.botaoTutorial.layer.cornerRadius = 20
+        self.botaoTutorial.layer.masksToBounds = true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
