@@ -10,6 +10,10 @@ import UIKit
 class JogarTeoriaViewController: UIViewController {
     @IBOutlet weak var botaoJogar: UIButton!
     @IBOutlet weak var botaoTutorial: UIButton!
+    @IBOutlet weak var labelHighScore: UILabel!
+    
+    let defaults = UserDefaults.standard
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +23,9 @@ class JogarTeoriaViewController: UIViewController {
         
         self.botaoTutorial.layer.cornerRadius = 20
         self.botaoTutorial.layer.masksToBounds = true
+        
+        self.labelHighScore.text = "High Score: \(self.defaults.integer(forKey: "score"))"
+        self.labelHighScore.textColor = .white
+        self.labelHighScore.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
     }
 }

@@ -18,7 +18,7 @@ class Fase{
     init(imagem: Int, botaoCorreto: Int, textoPergunta: String) {
         self.botaoCorreto = botaoCorreto
         self.pontuacao = 100
-        self.textoPergunta = "Based on the concept of \(textoPergunta). This is"
+        self.textoPergunta = textoPergunta
         self.imagem = "fase\(imagem)imagem"
     }
 }

@@ -18,6 +18,8 @@ class TelasViewController: UIViewController {
     @IBOutlet weak var botaoNaoFase: UIButton!
     @IBOutlet weak var progressoDoJogo: UILabel!
     @IBOutlet weak var perguntasTextos: UILabel!
+    @IBOutlet weak var botaoVoltar: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,8 @@ class TelasViewController: UIViewController {
         self.progressoDoJogo.text = "\(numeroDeFases + 1)/8"
         self.progressoDoJogo.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         self.perguntasTextos.text = frase
+        
+        
     }
     
     

@@ -15,9 +15,14 @@ class TelaFinalViewController: UIViewController {
     
     @IBOutlet weak var menuFinalBotao: UIButton!
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.scoreLabel.text = "Score: \(score)"
+        if self.score>self.defaults.integer(forKey: "score"){
+            self.defaults.set(self.score, forKey: "score")
+        }
         
         self.scoreLabel.layer.cornerRadius = 10
         self.scoreLabel.layer.masksToBounds = true
