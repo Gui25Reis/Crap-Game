@@ -1,9 +1,5 @@
-# Crap-Game-OK
-Projeto desenvolvido pelo grupo DreamTeam, composto por João Pimenta, Marcelo pErassi e Juliana Santana e aprimorado por nós.
-
-
-
-
+# Crap-Game
+Projeto desenvolvido inicialmente pelo grupo DreamTeam e aprimorado por nós.
 
 ## Autores
 <table>
