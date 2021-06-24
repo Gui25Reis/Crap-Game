@@ -21,9 +21,9 @@ Projeto desenvolvido pelo grupo DreamTeam, composto por João Pimenta, Marcelo p
             </a>
         </td>
 		    <td align="center">
-            <a href="https://github.com/">
-                <img src="  " width="100px;" alt="Foto do NOME AQUI no GitHub"/><br>
-                <sub><b>NOME AQUI</b></sub>
+            <a href="https://github.com/DeboraKass">
+                <img src="https://avatars.githubusercontent.com/u/83611317?v=4 " width="100px;" alt="Foto do Debs no GitHub"/><br>
+                <sub><b>Debs</b></sub>
             </a>
         </td>
     </tr>
