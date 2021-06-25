@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uq9-Pn-CcK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uq9-Pn-CcK">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,23 +20,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5B-WF-uTn">
-                                <rect key="frame" x="46" y="655" width="120" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY3-7m-JN2">
+                                <rect key="frame" x="224" y="709" width="84" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2RI-T4-DyM"/>
-                                    <constraint firstAttribute="width" constant="120" id="jfO-jS-bIX"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ebo-Fa-who"/>
+                                    <constraint firstAttribute="width" constant="120" id="NHh-Qo-o66"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Theory">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="About">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="fDn-Es-VOs" kind="presentation" id="des-Y5-4bS"/>
-                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="High Score: 1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-NS-Zh6">
-                                <rect key="frame" x="112" y="524" width="166" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="High Score: 1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-NS-Zh6">
+                                <rect key="frame" x="112" y="500" width="166" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="166" id="ZCv-iW-GTt"/>
                                 </constraints>
@@ -44,8 +41,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3o-Q4-Wwz">
-                                <rect key="frame" x="224" y="655" width="120" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3o-Q4-Wwz">
+                                <rect key="frame" x="135" y="600" width="120" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="SFQ-z3-QGQ"/>
@@ -59,6 +56,21 @@
                                 <connections>
                                     <action selector="botaoJogar:" destination="Tjn-CF-Enk" eventType="touchUpInside" id="bHY-er-Lar"/>
                                     <segue destination="ifM-G7-9w3" kind="show" id="CJq-kM-tdP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5B-WF-uTn">
+                                <rect key="frame" x="78" y="709" width="84" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2RI-T4-DyM"/>
+                                    <constraint firstAttribute="width" constant="120" id="jfO-jS-bIX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fDn-Es-VOs" kind="presentation" id="des-Y5-4bS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -206,8 +218,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="fase1imagem" translatesAutoresizingMaskIntoConstraints="NO" id="lPx-Ee-9YT">
-                                <rect key="frame" x="20" y="163.66666666666669" width="350" height="533.33333333333326"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" misplaced="YES" image="fase1imagem" translatesAutoresizingMaskIntoConstraints="NO" id="lPx-Ee-9YT">
+                                <rect key="frame" x="20" y="179" width="350" height="478"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrast" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdB-mX-T2h">
                                 <rect key="frame" x="42" y="110.00000000000001" width="306" height="45.666666666666671"/>
@@ -218,21 +230,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX0-g4-oYH">
-                                <rect key="frame" x="220" y="719" width="150" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="From the concept, this image is:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BS-1r-88l">
+                                <rect key="frame" x="42" y="675" width="306" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="I37-Qy-Dws"/>
-                                    <constraint firstAttribute="height" constant="61" id="KkG-4y-azu"/>
+                                    <constraint firstAttribute="height" constant="45.670000000000002" id="Dlv-Gj-O1n"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Correct" image="checkmark.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="botaoNaoAtualizar:" destination="ifM-G7-9w3" eventType="touchUpInside" id="6U5-0g-jB8"/>
-                                    <action selector="botaoNaoFase1:" destination="VjT-Vz-D9j" eventType="touchUpInside" id="tAN-yA-2Xd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-P8-xfd">
-                                <rect key="frame" x="20" y="720" width="150" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-P8-xfd">
+                                <rect key="frame" x="20" y="728" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.080223463480000007" green="1" blue="0.36061543229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="n63-XX-2ky"/>
                                     <constraint firstAttribute="width" constant="150" id="wV3-q6-eMS"/>
@@ -244,14 +253,14 @@
                                     <action selector="botaoSimFase1:" destination="VjT-Vz-D9j" eventType="touchUpInside" id="SS8-Fb-Jk7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEW-t9-EZS">
-                                <rect key="frame" x="20" y="54" width="70" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEW-t9-EZS">
+                                <rect key="frame" x="300" y="54" width="70" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Iuz-Ve-kNM"/>
                                     <constraint firstAttribute="width" constant="70" id="K8g-CS-XWF"/>
                                 </constraints>
-                                <state key="normal" title="Back" image="chevron.left.circle.fill" catalog="system">
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" image="xmark.circle" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -259,8 +268,8 @@
                                     <action selector="botaoSimFase1:" destination="VjT-Vz-D9j" eventType="touchUpInside" id="krg-uy-OTC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCK-o1-XOM">
-                                <rect key="frame" x="42" y="65" width="306" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1/4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCK-o1-XOM">
+                                <rect key="frame" x="171" y="63" width="48" height="24"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="306" id="7BO-ws-yjy"/>
@@ -269,6 +278,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX0-g4-oYH">
+                                <rect key="frame" x="220" y="728" width="150" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="I37-Qy-Dws"/>
+                                    <constraint firstAttribute="height" constant="61" id="KkG-4y-azu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Correct" image="checkmark.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="botaoNaoAtualizar:" destination="ifM-G7-9w3" eventType="touchUpInside" id="6U5-0g-jB8"/>
+                                    <action selector="botaoNaoFase1:" destination="VjT-Vz-D9j" eventType="touchUpInside" id="tAN-yA-2Xd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qVj-PK-P8C"/>
                         <color key="backgroundColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -315,10 +337,10 @@
     </scenes>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="chevron.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="fase1imagem" width="3680" height="4505"/>
         <image name="paginaTeoria" width="1170" height="2532"/>
         <image name="telaInicial" width="4855" height="10197"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
