@@ -46,6 +46,13 @@ class TelasViewController: UIViewController {
         self.perguntasTextos.text = frase
         
         
+        self.botaoNaoFase.tintColor = UIColor(red: 36/255, green: 170/255, blue: 41/255, alpha: 1)
+        self.botaoNaoFase.backgroundColor = UIColor(red: 36/255, green: 170/255, blue: 41/255, alpha: 0.5)
+        self.botaoNaoFase.setTitleColor(UIColor(red: 36/255, green: 170/255, blue: 41/255, alpha: 1), for: .normal)
+        
+        self.botaoSimFase.tintColor = UIColor(red: 241/255, green: 42/255, blue: 42/255, alpha: 1)
+        self.botaoSimFase.backgroundColor = UIColor(red: 241/255, green: 42/255, blue: 42/255, alpha: 0.5)
+        self.botaoSimFase.setTitleColor(UIColor(red: 241/255, green: 42/255, blue: 42/255, alpha: 1), for: .normal)
     }
     
     

@@ -218,44 +218,40 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX0-g4-oYH">
-                                <rect key="frame" x="245" y="719" width="125" height="61"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX0-g4-oYH">
+                                <rect key="frame" x="220" y="719" width="150" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="I37-Qy-Dws"/>
+                                    <constraint firstAttribute="width" constant="150" id="I37-Qy-Dws"/>
                                     <constraint firstAttribute="height" constant="61" id="KkG-4y-azu"/>
                                 </constraints>
-                                <state key="normal" title="Wrong">
-                                    <color key="titleColor" red="0.071666949450000003" green="0.081141088360000002" blue="0.088488073969999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Correct" image="checkmark.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="botaoNaoAtualizar:" destination="ifM-G7-9w3" eventType="touchUpInside" id="6U5-0g-jB8"/>
                                     <action selector="botaoNaoFase1:" destination="VjT-Vz-D9j" eventType="touchUpInside" id="tAN-yA-2Xd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-P8-xfd">
-                                <rect key="frame" x="20" y="720" width="125" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-P8-xfd">
+                                <rect key="frame" x="20" y="720" width="150" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="n63-XX-2ky"/>
-                                    <constraint firstAttribute="width" constant="125" id="wV3-q6-eMS"/>
+                                    <constraint firstAttribute="width" constant="150" id="wV3-q6-eMS"/>
                                 </constraints>
-                                <state key="normal" title="Correct">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Wrong" image="xmark.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="botaoSimAtualizar:" destination="ifM-G7-9w3" eventType="touchUpInside" id="NdC-lm-nCe"/>
                                     <action selector="botaoSimFase1:" destination="VjT-Vz-D9j" eventType="touchUpInside" id="SS8-Fb-Jk7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEW-t9-EZS">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEW-t9-EZS">
                                 <rect key="frame" x="20" y="54" width="70" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Iuz-Ve-kNM"/>
                                     <constraint firstAttribute="width" constant="70" id="K8g-CS-XWF"/>
                                 </constraints>
-                                <state key="normal" title="Correct">
+                                <state key="normal" title="Back" image="chevron.left.circle.fill" catalog="system">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -318,9 +314,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="chevron.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="fase1imagem" width="3680" height="4505"/>
         <image name="paginaTeoria" width="1170" height="2532"/>
         <image name="telaInicial" width="4855" height="10197"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
