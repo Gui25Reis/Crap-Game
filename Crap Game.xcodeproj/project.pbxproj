@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2212CD37268B89AB003BC8F8 /* UIViewController+TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2212CD36268B89AB003BC8F8 /* UIViewController+TopBar.swift */; };
 		E45E256B2667ED77006854F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45E256A2667ED77006854F9 /* AppDelegate.swift */; };
 		E45E256D2667ED77006854F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45E256C2667ED77006854F9 /* SceneDelegate.swift */; };
 		E45E25722667ED77006854F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45E25702667ED77006854F9 /* Main.storyboard */; };
 		E45E25742667ED78006854F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45E25732667ED78006854F9 /* Assets.xcassets */; };
 		E45E25772667ED78006854F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45E25752667ED78006854F9 /* LaunchScreen.storyboard */; };
-		E4B10E7E267AA85F00C28CF3 /* Teoria2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B10E7D267AA85F00C28CF3 /* Teoria2ViewController.swift */; };
+		E4B10E7E267AA85F00C28CF3 /* TheoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B10E7D267AA85F00C28CF3 /* TheoryViewController.swift */; };
 		E4F9D88B266945D900A7D289 /* TelasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9D88A266945D900A7D289 /* TelasViewController.swift */; };
 		E4F9D88D2669475300A7D289 /* JogarTeoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9D88C2669475300A7D289 /* JogarTeoriaViewController.swift */; };
 		E4F9D88F26694D0B00A7D289 /* Fase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9D88E26694D0B00A7D289 /* Fase.swift */; };
-		E4F9D891266969C700A7D289 /* TelaFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9D890266969C700A7D289 /* TelaFinalViewController.swift */; };
+		E4F9D891266969C700A7D289 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9D890266969C700A7D289 /* FinalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2212CD36268B89AB003BC8F8 /* UIViewController+TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopBar.swift"; sourceTree = "<group>"; };
 		E45E25672667ED77006854F9 /* Crap Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crap Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45E256A2667ED77006854F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E45E256C2667ED77006854F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,11 +29,11 @@
 		E45E25732667ED78006854F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45E25762667ED78006854F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E45E25782667ED78006854F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4B10E7D267AA85F00C28CF3 /* Teoria2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teoria2ViewController.swift; sourceTree = "<group>"; };
+		E4B10E7D267AA85F00C28CF3 /* TheoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewController.swift; sourceTree = "<group>"; };
 		E4F9D88A266945D900A7D289 /* TelasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelasViewController.swift; sourceTree = "<group>"; };
 		E4F9D88C2669475300A7D289 /* JogarTeoriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogarTeoriaViewController.swift; sourceTree = "<group>"; };
 		E4F9D88E26694D0B00A7D289 /* Fase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fase.swift; sourceTree = "<group>"; };
-		E4F9D890266969C700A7D289 /* TelaFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaFinalViewController.swift; sourceTree = "<group>"; };
+		E4F9D890266969C700A7D289 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2212CD38268B94B1003BC8F8 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				E45E25782667ED78006854F9 /* Info.plist */,
+				E45E25752667ED78006854F9 /* LaunchScreen.storyboard */,
+				E45E256A2667ED77006854F9 /* AppDelegate.swift */,
+				E45E256C2667ED77006854F9 /* SceneDelegate.swift */,
+				E45E25702667ED77006854F9 /* Main.storyboard */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		2212CD39268B94D2003BC8F8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E45E25732667ED78006854F9 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2212CD3A268B9519003BC8F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4F9D88C2669475300A7D289 /* JogarTeoriaViewController.swift */,
+				E4B10E7D267AA85F00C28CF3 /* TheoryViewController.swift */,
+				E4F9D88A266945D900A7D289 /* TelasViewController.swift */,
+				E4F9D890266969C700A7D289 /* FinalViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2212CD3B268B952E003BC8F8 /* Complements */ = {
+			isa = PBXGroup;
+			children = (
+				E4F9D88E26694D0B00A7D289 /* Fase.swift */,
+			);
+			path = Complements;
+			sourceTree = "<group>";
+		};
+		2212CD3C268B9542003BC8F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2212CD36268B89AB003BC8F8 /* UIViewController+TopBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E45E255E2667ED77006854F9 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +113,11 @@
 		E45E25692667ED77006854F9 /* Crap Game */ = {
 			isa = PBXGroup;
 			children = (
-				E45E256A2667ED77006854F9 /* AppDelegate.swift */,
-				E45E256C2667ED77006854F9 /* SceneDelegate.swift */,
-				E45E25702667ED77006854F9 /* Main.storyboard */,
-				E4B10E7D267AA85F00C28CF3 /* Teoria2ViewController.swift */,
-				E4F9D890266969C700A7D289 /* TelaFinalViewController.swift */,
-				E4F9D88C2669475300A7D289 /* JogarTeoriaViewController.swift */,
-				E4F9D88A266945D900A7D289 /* TelasViewController.swift */,
-				E4F9D88E26694D0B00A7D289 /* Fase.swift */,
-				E45E25732667ED78006854F9 /* Assets.xcassets */,
-				E45E25752667ED78006854F9 /* LaunchScreen.storyboard */,
-				E45E25782667ED78006854F9 /* Info.plist */,
+				2212CD3A268B9519003BC8F8 /* Controllers */,
+				2212CD39268B94D2003BC8F8 /* Assets */,
+				2212CD38268B94B1003BC8F8 /* System */,
+				2212CD3B268B952E003BC8F8 /* Complements */,
+				2212CD3C268B9542003BC8F8 /* Extensions */,
 			);
 			path = "Crap Game";
 			sourceTree = "<group>";
@@ -149,12 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B10E7E267AA85F00C28CF3 /* Teoria2ViewController.swift in Sources */,
+				2212CD37268B89AB003BC8F8 /* UIViewController+TopBar.swift in Sources */,
+				E4B10E7E267AA85F00C28CF3 /* TheoryViewController.swift in Sources */,
 				E4F9D88F26694D0B00A7D289 /* Fase.swift in Sources */,
 				E4F9D88B266945D900A7D289 /* TelasViewController.swift in Sources */,
 				E45E256B2667ED77006854F9 /* AppDelegate.swift in Sources */,
 				E4F9D88D2669475300A7D289 /* JogarTeoriaViewController.swift in Sources */,
-				E4F9D891266969C700A7D289 /* TelaFinalViewController.swift in Sources */,
+				E4F9D891266969C700A7D289 /* FinalViewController.swift in Sources */,
 				E45E256D2667ED77006854F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,8 +349,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 9X7UY2FV75;
-				INFOPLIST_FILE = "Crap Game/Info.plist";
+				DEVELOPMENT_TEAM = 534V229RMK;
+				INFOPLIST_FILE = "Crap Game/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,8 +372,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 9X7UY2FV75;
-				INFOPLIST_FILE = "Crap Game/Info.plist";
+				DEVELOPMENT_TEAM = 534V229RMK;
+				INFOPLIST_FILE = "Crap Game/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
