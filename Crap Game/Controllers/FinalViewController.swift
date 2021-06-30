@@ -27,10 +27,10 @@ class TelaFinalViewController: UIViewController {
         self.scoreLabel.layer.cornerRadius = 10
         self.scoreLabel.layer.masksToBounds = true
         
-        self.menuFinalBotao.layer.cornerRadius = 20
+        self.menuFinalBotao.layer.cornerRadius = 10
         self.menuFinalBotao.layer.masksToBounds = true
         
-        self.reastarBotao.layer.cornerRadius = 20
+        self.reastarBotao.layer.cornerRadius = 10
         self.reastarBotao.layer.masksToBounds = true
     }
 }

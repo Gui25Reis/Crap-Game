@@ -24,6 +24,8 @@ class JogarTeoriaViewController: UIViewController {
         self.botaoTutorial.layer.masksToBounds = true
         
         self.labelHighScore.text = "High Score: \(self.defaults.integer(forKey: "score"))"
-        self.labelHighScore.textColor = .white
+//        self.labelHighScore.textColor = .black 
+        self.labelHighScore.layer.cornerRadius = 10
+        self.labelHighScore.layer.masksToBounds = true
     }
 }

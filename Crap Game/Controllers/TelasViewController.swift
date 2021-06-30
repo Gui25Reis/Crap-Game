@@ -21,6 +21,7 @@ class TelasViewController: UIViewController {
     @IBOutlet weak var pontuacaoJogo: UILabel!
     @IBOutlet weak var perguntasTextos: UILabel!
     @IBOutlet weak var botaoVoltar: UIButton!
+    @IBOutlet weak var fraseEnunciado: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,7 @@ class TelasViewController: UIViewController {
         
         self.pontuacaoJogo.text = ""
         
-        let gabarito:[Int]    = [1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1]
+        let gabarito:[Int]    = [1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1]
         let tipoFase:[String] = ["Repetition", "Contrast", "Contrast", "Aligment", "Proximity",
                                  "Aligment", "Repetition", "Proximity", "Contrast", "Repetition",
                                  "Repetition", "Aligment", "Aligment", "Proximity", "Contrast",]
@@ -43,6 +44,7 @@ class TelasViewController: UIViewController {
         
         for i in 0..<self.maxFases {
             self.fasesDoJogo.append(Fase(imagem: range[i]+1, botaoCorreto: gabarito[range[i]], textoPergunta: tipoFase[range[i]]))
+            
         }
         
         let image = fasesDoJogo[numeroDeFases].imagem
@@ -60,6 +62,11 @@ class TelasViewController: UIViewController {
         self.botaoSimFase.tintColor = UIColor(red: 241/255, green: 42/255, blue: 42/255, alpha: 1)
         self.botaoSimFase.backgroundColor = UIColor(red: 241/255, green: 42/255, blue: 42/255, alpha: 0.25)
         self.botaoSimFase.setTitleColor(UIColor(red: 241/255, green: 42/255, blue: 42/255, alpha: 1), for: .normal)
+        
+        self.fraseEnunciado.textColor = .white
+        
+        let configIcon = UIImage.SymbolConfiguration(pointSize: 25, weight: .bold, scale: .large)
+        self.botaoVoltar.setImage(UIImage(systemName: "xmark.circle", withConfiguration: configIcon), for: .normal)
     }
     
     
