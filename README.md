@@ -4,7 +4,7 @@
 [![Swift version](https://img.shields.io/badge/swift-v5.3-blue?logo=swift)](https://swift.org/download/#releases)
 [![License](https://img.shields.io/badge/licença-GNU%20v3.0-brightgreen?)](https://github.com/Gui25Reis/Crap-Game/blob/main/LICENSE)
 
-![Capa](https://github.com/Gui25Reis/Inkolors/blob/main/arquivos/Git-Capa.png)
+![Capa](https://github.com/Gui25Reis/Crap-Game/blob/main/Arquivos/Git-Capa.png)
 
 Projeto desenvolvido inicialmente pelo grupo DreamTeam e aprimorado por nós: um jogo quiz com o tema de design CRAP.
 
